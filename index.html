@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="styles/style_index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>BANK CAT</h1>
+  </header>
+  <main>
+    <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+      <div class="form_div">
+        <label>Login:</label>
+        <input class="field_class" name="login_txt" type="text" placeholder="Ingrese usuario" autofocus>
+        <label>Password:</label>
+        <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Ingrese contraseña">
+        <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Entrar</button>
+      </div>
+      <div class="info_div">
+        <p>El banco de tus sueños</p>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Proyecto final db <a href="#">BankCat&trade;</a></p>
+  </footer>
+</body>
+</html>
